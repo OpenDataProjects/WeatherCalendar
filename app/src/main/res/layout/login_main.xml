@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="?attr/actionBarSize">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/background_sky"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_safe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/infoSection"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="30dp"
+            android:textColor="@android:color/background_dark"
+            android:visibility="visible">
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/infoSection"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="30dp"
+            android:textColor="@android:color/background_dark"
+            android:visibility="visible">
+
+            <CheckBox
+                android:id="@+id/chkRemeber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="記住我"
+                android:textColor="#FFF"
+                android:textSize="15dp"
+                android:layout_marginEnd="5dp"
+                android:layout_below="@+id/password"
+                android:layout_alignParentEnd="true" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/account"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="Email 帳號"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="0dp"
+                android:textColor="#FFF"
+                android:textColorHint="#999" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@mipmap/lock"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="密碼"
+                android:inputType="textPassword"
+                android:paddingLeft="0dp"
+                android:textColor="#FFF"
+                android:textColorHint="#999" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/infoSection"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:textColor="@android:color/background_dark"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/button_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_xml_btn_yellow"
+                android:text="快速註冊/登入" />
+
+            <Button
+                android:id="@+id/button_anonymously"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button_email"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_xml_btn_yellow"
+                android:text="訪客登入" />
+
+            <Button
+                android:id="@+id/button_other"
+                android:onClick="btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button_anonymously"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_xml_btn_red"
+                android:visibility="visible"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="直接登入" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relative_layout_GoogleFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/infoSection"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:textColor="@android:color/background_dark"
+            >
+
+            <TextView
+                android:id="@+id/tv_forgotPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button_facebook"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:text="忘記密碼 ?"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFF" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
