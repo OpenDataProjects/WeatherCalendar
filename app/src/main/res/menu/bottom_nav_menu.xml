@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_today"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_today" />
+
+    <item
+        android:id="@+id/navigation_week"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_week" />
+
+    <item
+        android:id="@+id/navigation_schedule"
+        android:icon="@drawable/ic_schedule_car_black_24dp"
+        android:title="@string/title_schedule" />
+    <item
+        android:id="@+id/navigation_memo"
+        android:icon="@drawable/ic_memo_black_24dp"
+        android:title="@string/title_memo" />
+
+    <item
+        android:id="@+id/navigation_setting"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="@string/title_setting" />
+
+</menu>
