@@ -20,16 +20,19 @@ public class WeekFragment extends Fragment {
 
 	public View onCreateView(@NonNull LayoutInflater inflater,
 							 ViewGroup container, Bundle savedInstanceState) {
+		// Please follow this github or Other you know
+		// https://github.com/tlaabs/TimetableView
+
 		notificationsViewModel =
 				ViewModelProviders.of(this).get(WeekViewModel.class);
-		View root = inflater.inflate(R.layout.fragment_memo, container, false);
-		final TextView textView = root.findViewById(R.id.text_notifications);
-		notificationsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-			@Override
-			public void onChanged(@Nullable String s) {
-				textView.setText(s);
-			}
-		});
+		View root = inflater.inflate(R.layout.fragment_week, container, false);
+//		final TextView textView = root.findViewById(R.id.text_notifications);
+//		notificationsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+//			@Override
+//			public void onChanged(@Nullable String s) {
+//				textView.setText(s);
+//			}
+//		});
 		return root;
 	}
 }

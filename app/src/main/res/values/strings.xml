@@ -5,4 +5,14 @@
     <string name="title_week">一周課表</string>
     <string name="title_schedule">行程推薦</string>
     <string name="title_setting">系統設定</string>
+
+    <string-array name="my_week_title">
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+        <item>Sun</item>
+    </string-array>
 </resources>
