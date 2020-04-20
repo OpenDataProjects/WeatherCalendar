@@ -49,6 +49,12 @@ public class LoginActivity extends AppCompatActivity implements MainView {
 		finish();
 	}
 
+	public void btn_register(View view) {
+		Intent i = new Intent(this, RegisterActivity.class);
+		startActivity(i);
+		finish();
+	}
+
 	public void btn_login(View view) {
 		mainPresenter.onLoginClick(getAccountViewById().getText().toString(), getPassViewById().getText().toString());
 	}
