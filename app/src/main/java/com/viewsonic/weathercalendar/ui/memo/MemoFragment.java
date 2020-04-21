@@ -22,14 +22,8 @@ public class MemoFragment extends Fragment {
 							 ViewGroup container, Bundle savedInstanceState) {
 		dashboardViewModel =
 				ViewModelProviders.of(this).get(MemoViewModel.class);
-		View root = inflater.inflate(R.layout.fragment_week, container, false);
-		final TextView textView = root.findViewById(R.id.text_dashboard);
-		dashboardViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-			@Override
-			public void onChanged(@Nullable String s) {
-				textView.setText(s);
-			}
-		});
+		View root = inflater.inflate(R.layout.fragment_memo, container, false);
+
 		return root;
 	}
 }
