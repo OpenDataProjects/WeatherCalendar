@@ -7,12 +7,11 @@
     <string name="title_setting">系統設定</string>
 
     <string-array name="my_week_title">
+        <item>四月</item>
         <item>Mon</item>
         <item>Tue</item>
         <item>Wed</item>
         <item>Thu</item>
         <item>Fri</item>
-        <item>Sat</item>
-        <item>Sun</item>
     </string-array>
 </resources>

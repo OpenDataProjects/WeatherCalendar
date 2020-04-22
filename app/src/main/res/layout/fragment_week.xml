@@ -6,12 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".ui.memo.MemoFragment">
 
-    <com.github.tlaabs.timetableview.TimetableView
+    <com.viewsonic.weathercalendar.view.TimetableView
         android:id="@+id/timetable"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        app:column_count="7"
+        app:column_count="6"
         app:header_title="@array/my_week_title"
         app:row_count="12"
         app:layout_constraintBottom_toBottomOf="parent"
