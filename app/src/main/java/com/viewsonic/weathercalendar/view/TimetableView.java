@@ -43,7 +43,7 @@ public class TimetableView extends LinearLayout {
 	private static final int DEFAULT_SIDE_HEADER_FONT_SIZE_DP = 13;
 	private static final int DEFAULT_HEADER_FONT_SIZE_DP = 15;
 	private static final int DEFAULT_HEADER_HIGHLIGHT_FONT_SIZE_DP = 15;
-	private static final int DEFAULT_STICKER_FONT_SIZE_DP = 13;
+	private static final int DEFAULT_STICKER_FONT_SIZE_DP = 14;
 
 
 	private int rowCount;
@@ -164,20 +164,25 @@ public class TimetableView extends LinearLayout {
 			RelativeLayout.LayoutParams param = createStickerParam(schedule);
 			tv.setLayoutParams(param);
 			tv.setPadding(10, 0, 10, 0);
-			tv.setText(schedule.getClassTitle() + "\n" + schedule.getClassPlace());
 			tv.setTextColor(Color.parseColor("#FFFFFF"));
+			tv.setCompoundDrawablesWithIntrinsicBounds(
+					0, 0, R.mipmap.cloud, 0);
 			switch (schedule.getPM()) {
 				case PM_LOW:
 					tv.setBackgroundColor(Color.parseColor("#FFD700"));
+					tv.setText(schedule.getClassTitle() + "\n" + schedule.getClassPlace() + "\n" + "PM2.5:低");
 					break;
 				case PM_MEDIUM:
 					tv.setBackgroundColor(Color.parseColor("#FF4500"));
+					tv.setText(schedule.getClassTitle() + "\n" + schedule.getClassPlace() + "\n" + "PM2.5:高");
 					break;
 				case PM_HIGH:
 					tv.setBackgroundColor(Color.parseColor("#9932CC"));
+					tv.setText(schedule.getClassTitle() + "\n" + schedule.getClassPlace() + "\n" + "PM2.5:危險");
 					break;
 				case PM_SAFE:
 					tv.setBackgroundColor(Color.parseColor("#00FF00"));
+					tv.setText(schedule.getClassTitle() + "\n" + schedule.getClassPlace() + "\n" + "PM2.5:安全");
 					break;
 			}
 			tv.setTextSize(TypedValue.COMPLEX_UNIT_DIP, DEFAULT_STICKER_FONT_SIZE_DP);
