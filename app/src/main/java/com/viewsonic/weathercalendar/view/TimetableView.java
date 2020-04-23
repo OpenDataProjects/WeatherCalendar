@@ -32,6 +32,7 @@ import com.viewsonic.weathercalendar.item.Sticker;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Random;
 
 public class TimetableView extends LinearLayout {
 	private static final int DEFAULT_ROW_COUNT = 12;
@@ -165,8 +166,35 @@ public class TimetableView extends LinearLayout {
 			tv.setLayoutParams(param);
 			tv.setPadding(10, 0, 10, 0);
 			tv.setTextColor(Color.parseColor("#FFFFFF"));
-			tv.setCompoundDrawablesWithIntrinsicBounds(
-					0, 0, R.mipmap.cloud, 0);
+			// give a random weather
+			Random rand = new Random();
+			int weather = rand.nextInt(5);
+
+			switch (weather) {
+				case 0:
+					tv.setCompoundDrawablesWithIntrinsicBounds(
+							0, 0, R.mipmap.cloudy, 0);
+					break;
+				case 1:
+					tv.setCompoundDrawablesWithIntrinsicBounds(
+							0, 0, R.mipmap.cloudy2, 0);
+					break;
+				case 2:
+					tv.setCompoundDrawablesWithIntrinsicBounds(
+							0, 0, R.mipmap.sun, 0);
+					break;
+				case 3:
+					tv.setCompoundDrawablesWithIntrinsicBounds(
+							0, 0, R.mipmap.rain, 0);
+					break;
+				default:
+					tv.setCompoundDrawablesWithIntrinsicBounds(
+							0, 0, R.mipmap.thunder, 0);
+					break;
+			}
+
+			//
+
 			switch (schedule.getPM()) {
 				case PM_LOW:
 					tv.setBackgroundColor(Color.parseColor("#FFD700"));
