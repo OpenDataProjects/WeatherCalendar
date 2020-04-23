@@ -26,4 +26,9 @@ public class MainActivity extends AppCompatActivity {
 		NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 		NavigationUI.setupWithNavController(navView, navController);
 	}
+	// 一週課表: week
+	// 當日備忘: memo
+	// 當日課表: today
+	// 行程推薦: schedule
+	// 設定: setting
 }
