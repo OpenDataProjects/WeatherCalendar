@@ -14,4 +14,9 @@
         <item>Thu</item>
         <item>Fri</item>
     </string-array>
+
+    <string-array name="my_home_title">
+        <item>本日</item>
+        <item>Mon</item>
+    </string-array>
 </resources>
