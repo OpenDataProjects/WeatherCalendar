@@ -139,27 +139,12 @@
             android:orientation="vertical">
 
             <include layout="@layout/memo_item"/>
-            <include layout="@layout/memo_item"/>
-            <include layout="@layout/memo_item"/>
-            <include layout="@layout/memo_item"/>
-            <include layout="@layout/memo_item"/>
-            <include layout="@layout/memo_item"/>
-            <include layout="@layout/memo_item"/>
-            <include layout="@layout/memo_item"/>
-            <include layout="@layout/memo_item"/>
-            <include layout="@layout/memo_item"/>
-            <include layout="@layout/memo_item"/>
-            <include layout="@layout/memo_item"/>
-            <include layout="@layout/memo_item"/>
-            <include layout="@layout/memo_item"/>
-            <include layout="@layout/memo_item"/>
-            <include layout="@layout/memo_item"/>
-            <include layout="@layout/memo_item"/>
-            <include layout="@layout/memo_item"/>
-            <include layout="@layout/memo_item"/>
-            <include layout="@layout/memo_item"/>
-            <include layout="@layout/memo_item"/>
-            <include layout="@layout/memo_item"/>
+            <include layout="@layout/memo_item_1"/>
+            <include layout="@layout/memo_item_2"/>
+            <include layout="@layout/memo_item_3"/>
+            <include layout="@layout/memo_item_4"/>
+            <include layout="@layout/memo_item_5"/>
+            <include layout="@layout/memo_item_6"/>
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

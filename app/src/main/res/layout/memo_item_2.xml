@@ -20,7 +20,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:textSize="20dp"
-                android:text="01:00"
+                android:text="04:00"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
             </TextView>
@@ -44,5 +44,5 @@
         android:layout_marginStart="80dp"
         android:layout_marginTop="20dp"
         android:textSize="20dp"
-        android:text="國文課要考試" />
+        android:text="等等小美要來找我拿書" />
 </LinearLayout>
