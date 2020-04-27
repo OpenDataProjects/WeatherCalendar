@@ -19,6 +19,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
             android:text="16:00" />
 
         <TextView
@@ -26,12 +27,14 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:background="@color/lightBlue"
+            android:textColor="@color/colorWhite"
             android:text="11"
-            android:textSize="20dp" />
+            android:textSize="25dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
             android:text="16:30" />
     </LinearLayout>
 
@@ -61,7 +64,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:textColor="@color/colorWhite"
             android:text="滴水紀念館"
+            android:textSize="15dp"
             android:layout_margin="10dp" />
         <TextView
             android:layout_width="wrap_content"
@@ -69,6 +74,7 @@
             android:layout_gravity="center"
             android:text="新北市淡水區滬尾炮台大門下的和平公園裡"
             android:layout_margin="10dp"
-            android:textSize="10dp"/>
+            android:textColor="@color/colorWhite"
+            android:textSize="15dp"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

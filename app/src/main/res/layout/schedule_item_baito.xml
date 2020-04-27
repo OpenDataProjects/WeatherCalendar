@@ -19,6 +19,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
             android:text="14:27" />
 
         <TextView
@@ -27,11 +28,13 @@
             android:layout_gravity="center_horizontal"
             android:background="@color/lightBlue"
             android:text="11"
-            android:textSize="20dp" />
+            android:textColor="@color/colorWhite"
+            android:textSize="25dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
             android:text="15:27" />
     </LinearLayout>
 
@@ -61,14 +64,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:textColor="@color/colorWhite"
             android:text="北投溫泉會館"
+            android:textSize="15dp"
             android:layout_margin="10dp" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:textColor="@color/colorWhite"
             android:text="台北市北投區中山路5-7號"
             android:layout_margin="10dp"
-            android:textSize="10dp"/>
+            android:textSize="15dp"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
