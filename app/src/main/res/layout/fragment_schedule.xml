@@ -22,18 +22,12 @@
             android:background="@color/colorGreen"
             android:orientation="vertical">
 
-            <include layout="@layout/schedule_item"/>
-            <include layout="@layout/schedule_item"/>
-            <include layout="@layout/schedule_item"/>
-            <include layout="@layout/schedule_item"/>
-            <include layout="@layout/schedule_item"/>
-            <include layout="@layout/schedule_item"/>
-            <include layout="@layout/schedule_item"/>
-            <include layout="@layout/schedule_item"/>
-            <include layout="@layout/schedule_item"/>
-            <include layout="@layout/schedule_item"/>
-            <include layout="@layout/schedule_item"/>
-            <include layout="@layout/schedule_item"/>
+            <include layout="@layout/schedule_item_baito"/>
+            <include layout="@layout/schedule_item_daisui"/>
+            <include layout="@layout/schedule_item_disui"/>
+            <include layout="@layout/schedule_item_heyguan"/>
+            <include layout="@layout/schedule_item_starbucks"/>
+            <include layout="@layout/schedule_item_huwei"/>
 
         </LinearLayout>
     </ScrollView>
